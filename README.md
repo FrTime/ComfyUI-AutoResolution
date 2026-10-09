@@ -9,10 +9,6 @@ in:  1080 x 1920  ·  9:16
 out: 768 x 1376  ·  ≈9:16  ·  1.01 MP
 ```
 
-## Why
-
-The core **Resolution Selector** node only knows a few preset ratios (1:1, 9:16, 16:9 and so on). For image-to-video and img2img you usually want the output to match the image you're feeding in. Otherwise you have to switch the preset every time you change images. This node reads the ratio straight from the image.
-
 ## Installation
 
 ### ComfyUI Manager
