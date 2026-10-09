@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-autoresolution"
+description = "Width and height from an input image's aspect ratio and a megapixel target, with a live output-size preview."
+version = "1.0.0"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/FrTime/ComfyUI-AutoResolution"
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "Auto Resolution"
+Icon = ""
