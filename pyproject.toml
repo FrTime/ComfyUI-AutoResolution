@@ -9,6 +9,6 @@ dependencies = []
 Repository = "https://github.com/FrTime/ComfyUI-AutoResolution"
 
 [tool.comfy]
-PublisherId = ""
+PublisherId = "shwtywnnthg"
 DisplayName = "Auto Resolution"
 Icon = ""

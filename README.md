@@ -13,7 +13,11 @@ out: 768 x 1376  ·  ≈9:16  ·  1.01 MP
 
 ### ComfyUI Manager
 
-Not on the registry yet. Use the manual install below.
+Search for **Auto Resolution** in ComfyUI Manager and install it, or with comfy-cli:
+
+```bash
+comfy node install comfyui-autoresolution
+```
 
 ### Manual
 
