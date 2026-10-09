@@ -39,7 +39,8 @@ class AutoResolution:
     def calc(self, image, megapixels, multiple):
         src_h, src_w = image.shape[1], image.shape[2]
         width, height = fit_resolution(src_w, src_h, megapixels, multiple)
-        return {"ui": {"text": [f"{src_w}x{src_h} -> {width} x {height}"]}, "result": (width, height)}
+        # the source size lets the web preview keep working when the image node has no preview
+        return {"ui": {"source": [src_w, src_h]}, "result": (width, height)}
 
 
 NODE_CLASS_MAPPINGS = {"AutoResolution": AutoResolution}

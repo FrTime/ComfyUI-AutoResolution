@@ -5,7 +5,8 @@ A single ComfyUI node that picks the width and height for you from the aspect ra
 The node shows the output size live, so you see the resolution you'll get before you queue.
 
 ```
-1080x1920 -> 768 x 1376  (1.01 MP)
+in:  1080 x 1920  ·  9:16
+out: 768 x 1376  ·  ≈9:16  ·  1.01 MP
 ```
 
 ## Why
@@ -64,7 +65,7 @@ Most models need dimensions divisible by a certain number. If they aren't, the i
 
 ### Live preview
 
-The green line under the widgets shows `source size -> output size (MP)`. It updates when you load a new image or change a widget. It reads the size from the upstream node's image preview, so it works with **Load Image** and anything else that shows a preview. If the image comes from a node without a preview, the line fills in after the first run.
+Two green lines under the widgets show the input and output sizes with their aspect ratios, plus the output megapixels. A ratio prefixed with `≈` is within 3% of that common ratio, which is normal after rounding to `multiple`. The lines update when you load a new image or change a widget. It reads the size from the upstream node's image preview, so it works with **Load Image** and anything else that shows a preview. If the image comes from a node without a preview, the lines fill in after the first run.
 
 ## How the size is calculated
 
